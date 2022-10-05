@@ -242,7 +242,7 @@
 ;; move given invader down the screen by increasing x by given dx and and y by INVADER-Y-SPEED
 (check-expect (tick-invader (make-invader 200 300 INVADER-X-SPEED))
               (make-invader (+ 200 INVADER-X-SPEED)(+ 300 INVADER-Y-SPEED) INVADER-X-SPEED))
-;(define (tick-invader i) i) ; stub
+;(define (tick-invader i) i) ;stub
 ;<template from Invader>
 (define (tick-invader invader)
   (make-invader (+ (invader-x invader) (invader-dx invader))
